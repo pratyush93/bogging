@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>blog application</title>
+ 
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+  <%= csrf_meta_tags %> 
+   <%= stylesheet_link_tag 'custom', :media => 'screen' %>
+<style>
+h1 {
+    text-align: center;
+}
+
+p.date {
+    text-align: right;
+}
+
+p.main {
+    text-align: justify;
+}
+</style>
 </head>
 <body>
+<div class ="container">
+<header>
+<%= image_tag("logo.png", :alt => "sample app", :class => "round")%>
+<nav class ="round">
+	<ul>
+		<li><%= link_to "Home", "#" %></li>
+		<li><%= link_to "Help", "#" %></li>
+		<li><%= link_to "sign in", "#" %></li>
+    </ul>
+</nav>
+</header> 
+<section class ="round"><%= yield %>
+</section>
 
-<%= yield %>
-
+</div>
 </body>
 </html>
+  
+
+
+
