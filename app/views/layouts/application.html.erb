@@ -18,17 +18,36 @@ p.date {
 p.main {
     text-align: justify;
 }
+body {
+    background-image: url("http://wallpaperfast.com/wp-content/uploads/2013/05/Nice-blue-background-Desktop-Wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+a:link, a:visited {
+    display: block;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #4169E1;
+    width: 120px;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    background-color: #6A5ACD;
+}
 </style>
 </head>
 <body>
 <div class ="container">
 <header>
-<%= image_tag("logo.png", :alt => "sample app", :class => "round")%>
+
 <nav class ="round">
 	<ul>
-		<li><%= link_to "Home", "#" %></li>
-		<li><%= link_to "Help", "#" %></li>
-		<li><%= link_to "sign in", "#" %></li>
+		<li><a><%= link_to "Home", "#" %></a></li><br>
+		<li><a><%= link_to "Help", "#" %></a></li><br>
+		<li><a><%= link_to "sign in", "#" %></a></li>
     </ul>
 </nav>
 </header> 
