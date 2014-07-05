@@ -1,8 +1,29 @@
 <!DOCTYPE html>
-<head><title>we are at <%= @title %></title></head>
+<head><title>we are at <%= @title %></title>
+	<style>
+	p.ex1 {display: block;
+    margin-left: 20 cm;
+    width: 290px;
+    padding: 20px;
+}
+a:link, a:visited {
+    display: block;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #4169E1;
+    width: 120px;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+}
+p {  
+    text-align: center;
+}
+a:hover, a:active {
+    background-color: #6A5ACD;
+}</style></head>
 <body>
-	<!--<h1><%= @title %></h1>-->
-      <p>this is the <%= @title %> page</p>
+	<p class="ex1"><a ><%= link_to "Join us!!",'#' %></a></p>
 </body>
 </html>
 
