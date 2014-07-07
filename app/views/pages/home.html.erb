@@ -1,31 +1,9 @@
-<!DOCTYPE html>
-<head><title>we are at <%= @title %></title>
-	<style>
-	p.ex1 {display: block;
-    margin-left: 20 cm;
-    width: 290px;
-    padding: 20px;
-}
-a:link, a:visited {
-    display: block;
-    font-weight: bold;
-    color: #ffffff;
-    background-color: #4169E1;
-    width: 120px;
-    text-align: center;
-    padding: 4px;
-    text-decoration: none;
-}
-p {  
-    text-align: center;
-}
-a:hover, a:active {
-    background-color: #6A5ACD;
-}</style></head>
-<body>
-	<p class="ex1"><a ><%= link_to "Join us!!",'#' %></a></p>
-</body>
-</html>
+<br>
+<br>
 
+<div class ="center hero-unit">
+    <h1>WELCOME to MY PROJECT</h1>
 
-
+    <h2>hello there!you are currrently at our home page</h2>
+     <%= link_to "join us","/users/new", class: "btn btn-large btn-primary" %>
+ </div>    

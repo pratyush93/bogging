@@ -1,61 +1,39 @@
 <!DOCTYPE html>
-<html>
 <head>
  
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %> 
-   <%= stylesheet_link_tag 'custom', :media => 'screen' %>
+  
+ 
+</head>
 <style>
-h1 {
-    text-align: center;
-}
-
-h1 {
-    text-shadow: 5px 5px 5px #6495ED;
-}
-
-li {
-    display: inline;
-}
-
-body {
+ body {
     background-image: url("http://wallpaperfast.com/wp-content/uploads/2013/05/Nice-blue-background-Desktop-Wallpaper.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-a:link, a:visited {
-    display: block;
-    font-weight: bold;
-    color: #ffffff;
-    background-color: #4169E1;
-    width: 120px;
-    text-align: center;
-    padding: 4px;
-    text-decoration: none;
-}
-
-a:hover, a:active {
-    background-color: #6A5ACD;
+li {
+    display: inline;
 }
 </style>
-</head>
-<body>
+<header class="navbar navbar-fixed-top navbar-inverse">
+<div class ="navbar-inner">
 <div class ="container">
-<header>
-<h1>Welcome to our community</h1>
-<nav class ="round">
-	<ul>
-		<li><a><%= link_to "Home", "#" %></a></li><br>
-		<li><a><%= link_to "Help", "#" %></a></li><br>
-		<li><a><%= link_to "Sign in", "#" %></a></li>
+  
+    <ul class="nav pull-right">
+        <li><%= link_to "Home", "/pages/home"  %></li>
+        <li><%= link_to "Help", "/pages/help"  %></li>
+        <li><%= link_to "Sign in", "#" %></li>
     </ul>
 </nav>
-</header> 
-<section class ="round"><%= yield %>
-</section>
-
 </div>
+</div>
+</header> 
+<div class ="container"><%= yield %><%= render 'layouts/footer'  %>
+</div>
+
+
 </body>
 </html>
   
