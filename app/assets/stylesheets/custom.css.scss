@@ -11,11 +11,56 @@ textarea{resize:vertical;
  { margin-bottom: 10px;}	
 
  footer{
- margin-top: 55px;
- padding-top: 45px;
- border-top: 5px solid #eaeaea;
+ margin-top: 50px;
+ padding-top: 40px;
+ border-top: 2px solid #eaeaea;
  }
  footer small{float: left;}
  footer ul{float:right;}
  footer a{color: #555}
  footer a:hover{color :#222}
+
+ input,textarea, select, .uneditable-input {
+ border: 1px solid #bbb;
+ width: 100%;
+ margin-botton: 15px;
+ }
+
+ input{
+ height: auto !important;
+ }
+
+
+
+ input#gobutton{
+cursor:pointer; /*forces the cursor to change to a hand when the button is hovered*/
+padding:5px 25px; /*add some padding to the inside of the button*/
+background:#35b128; /*the colour of the button*/
+border:1px solid #33842a; /*required or the default border for the browser will appear*/
+/*give the button curved corners, alter the size as required*/
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px;
+/*give the button a drop shadow*/
+-webkit-box-shadow: 0 0 4px rgba(0,0,0, .75);
+-moz-box-shadow: 0 0 4px rgba(0,0,0, .75);
+box-shadow: 0 0 4px rgba(0,0,0, .75);
+/*style the text*/
+color:#f3f3f3;
+font-size:1.1em;
+}
+/***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
+input#gobutton:hover, input#gobutton:focus{
+background-color :#399630; /*make the background a little darker*/
+/*reduce the drop shadow size to give a pushed button effect*/
+-webkit-box-shadow: 0 0 1px rgba(0,0,0, .75);
+-moz-box-shadow: 0 0 1px rgba(0,0,0, .75);
+box-shadow: 0 0 1px rgba(0,0,0, .75);
+}
+
+#a1{
+	color: #f00;
+	ul{ list-style: none;
+	margin: 0 0 18px 0;}
+}
+

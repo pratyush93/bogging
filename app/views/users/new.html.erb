@@ -1,7 +1,19 @@
-<br>
-<br>
 
-<div class ="center hero-unit">
-    <h1>three easy steps and you are iin</h1>
-
- </div>    
+    <h1 style="text-align:center;">SIGN UP!!</h1>
+    <div class ="row">
+     <div class="span6 offset3">
+      <%= form_for( @user) do |f| %>
+            <%= render 'shared/error_messages' %>
+    	      <%= f.label :name %>
+            <%= f.text_field :name %>
+            <%= f.label :email %>
+            <%= f.text_field :email %>
+            <%= f.label :password %>
+            <%= f.password_field :password %>
+            <%= f.label :password_confirmation,"confirmation" %>
+            <%= f.text_field :password_confirmation %><br><br><br>
+            <%= f.submit "create", class: "btn btn-large btn-primary" %>
+          <% end %>
+      </div>
+     </div>   
+    

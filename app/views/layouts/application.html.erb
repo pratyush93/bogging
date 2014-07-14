@@ -8,7 +8,7 @@
  
 </head>
 <style>
- body {
+body {
     background-image: url("http://wallpaperfast.com/wp-content/uploads/2013/05/Nice-blue-background-Desktop-Wallpaper.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -17,6 +17,7 @@ li {
     display: inline;
 }
 </style>
+<body>
 <header class="navbar navbar-fixed-top navbar-inverse">
 <div class ="navbar-inner">
 <div class ="container">
@@ -30,7 +31,10 @@ li {
 </div>
 </div>
 </header> 
-<div class ="container"><%= yield %><%= render 'layouts/footer'  %>
+<body>
+<div class ="container">
+  <%= yield %>
+  <%= render 'layouts/footer'  %>
 </div>
 
 
