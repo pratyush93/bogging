@@ -2,11 +2,15 @@ Rails.application.routes.draw do
   get 'users/new'
 
      get "pages/home"
-     get "pages/help"
+    get "pages/help"
      get "pages/about"
      get "pages/contact" 
- 
+     get "sessions/new"
+     get "sessions/create"
+     get "sessions/destroy"
+
 resources :users
+resources :sessions, only: [:new, :create, :destroy]
 
 
   #root  'pages#home'

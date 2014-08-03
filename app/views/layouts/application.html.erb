@@ -25,14 +25,16 @@ li {
     <ul class="nav pull-right">
         <li><%= link_to "Home", "/pages/home"  %></li>
         <li><%= link_to "Help", "/pages/help"  %></li>
-        <li><%= link_to "Sign in", "#" %></li>
+        <li><%= link_to "Sign in", "/sessions/new" %></li>
     </ul>
 </nav>
 </div>
 </div>
 </header> 
-<body>
+
 <div class ="container">
+  <% flash.each do |key,value| %>
+   <div class ="alert alert-<%= key %><%= value %>" </div> <% end %>
   <%= yield %>
   <%= render 'layouts/footer'  %>
 </div>

@@ -1,0 +1,16 @@
+    <h1 style="text-align:center;">SIGN UP!!</h1>
+    <div class ="row">
+     <div class="span6 offset3">
+           <%= form_for( :session, url: sessions_path) do |f| %>
+            <br><br><br>
+            <%= f.label :email %>
+            <%= f.text_field :email %><br><br><br>
+            <%= f.label :password %>
+            <%= f.password_field :password %>
+          <br><br><br>
+            <%= f.submit "SIgn IN", class: "btn btn-large btn-primary" %>
+          <% end %>
+          <p>Dont have a account yet? <%= link_to "join us", "/users/new" %></p>
+      </div>
+     </div>   
+
